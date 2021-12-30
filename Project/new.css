@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    color: white;
+    min-width: 1080px;
+
+    height: 61px;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.cart{
+    display: flex;
+    
+    align-items: center;
+}
+.border{
+    border: 1px solid #131921;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.small{
+    font-size: 13px;
+    color: rgb(211, 208, 208);
+}
+
+.border:hover{
+    border: 1px solid white;
+}
+
+.location{
+    border: 1px solid #131921;
+    border-radius: 3px;
+}
+.location:hover{
+    border: 1px solid white;
+}
+
+.fa-search{
+    color: #514535;
+    background-color: #f5b664;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+    font-size: 25px;
+    
+    font-weight: normal;
+    padding: 9px;    
+}
+
+.fa-search:hover{
+    background-color: #eea039;
+}
+
+.fa-shopping-cart{
+    font-size: 25px;
+}
+.search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: 850px;
+    min-width: 200px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+select{
+    height: 100%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+
+
+.nav-2{
+    display: flex;
+    background-color: #232F3E;
+    height: 40px;
+    min-width: 788px;
+}
+
+.nav-2 ul{
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.nav-2 ul li{
+    padding: 7px;
+    color: white;
+    border: 1px solid #232F3E;
+    border-radius: 3px;
+}
+
+.nav-2 ul li:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.nav-2 .all{
+    font-size: 17px;
+}
+
+.nav-2 img{
+    height: 100%;
+    padding: 10px;
+    margin-left: 50px;
+}
+.setc{
+    color: azure;
+    text-decoration: none;
+}
+
+@media (max-width:1223px){
+    .computer{
+        display: none;
+    }
+}
+
+@media (max-width:1131px){
+    .home_kitchen{
+        display: none;
+    }
+}
+
+@media (max-width:1015px){
+    .amazonpay{
+        display: none;
+    }
+}
+
+@media (max-width:921px){
+    .customer{
+        display: none;
+    }
+}
+
+@media (max-width:788px){
+    .electronics{
+        display: none;
+    }
+}
+
+
+@media (max-width : 1920px){
+.container_bg{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -350px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+}
+
+.products_row{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    margin-top: 270px;
+    padding: 15px;
+    
+    background-color: white;
+}
+
+.col-2{
+    margin-top: 30px;
+    padding: 15px;
+    background-color: white;
+}
+
+.img-set{
+    padding: 10px;
+}
+
+}
+
+
+
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
