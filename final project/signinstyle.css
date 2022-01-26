@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0mm;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.name {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.parent2 {
+  height: 330px;
+  display: flex;
+}
+
+.child1 {
+  flex: 2px;
+}
+
+.child2 {
+  flex-direction: row;
+  flex-direction: column;
+  background: rgb(242, 244, 247);
+  background-position: center;
+  width: 370px;
+  font-size: 30px;
+  color: rgb(17, 17, 17);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+
+.child3 {
+  flex: 2px;
+}
+
+.email {
+  font-size: 12px;
+
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  margin-top: 15px;
+}
+
+.input {
+  margin-top: 3px;
+  /* margin-bottom: 10px; */
+  border-radius: 3px;
+  border-color: rgb(221, 221, 221);
+  background: rgb(209, 223, 248);
+
+  display: flex;
+  height: 25px;
+  width: 337px;
+  border: none;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 340px;
+  height: 30px;
+  background: rgb(242, 203, 103);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.inst {
+  display: flex;
+  padding-top: 18px;
+  color: rgb(79, 81, 79);
+  font-size: 12px;
+  flex-direction: column;
+}
+
+.a {
+  font-size: 12px;
+}
+.disc {
+  display: flex;
+  padding-top: 1px;
+}
+.condition {
+  display: flex;
+  display: inline;
+  font-size: 10px;
+  padding-top: 20px;
+}
+.tnc {
+  margin-left: 7px;
+}
+.setc {
+  color: black;
+  text-decoration: none;
+}
+.btn11 {
+  font-size: small;
+  margin: 0px;
+  margin-bottom: 5px;
+  color: red;
+}
